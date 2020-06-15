@@ -32,5 +32,14 @@ public class Main {
                 System.out.println(m.quantity + " " + m.getName());
             }
         }
+
+        // Calculate total deposits
+        double sum = 0.0;
+        for (Money m : piggyBank) {
+            sum += m.getFaceValue();
+        }
+
+        decimalFormat.applyPattern("$0.00");
+        System.out.println("\nThe piggy bank holds " + decimalFormat.format(sum));
     }
 }
