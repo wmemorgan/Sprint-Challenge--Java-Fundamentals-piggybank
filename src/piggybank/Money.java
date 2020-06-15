@@ -41,12 +41,22 @@ abstract class Money {
         this.name = name;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQuantity(int num) {
+        this.quantity = num;
     };
 
-    public void addQuantity(int quantity) {
-        this.quantity += quantity;
+    public void add(int num) {
+        this.quantity += num;
+    }
+
+    public void subtract(int num) {
+        if (this.quantity > 0) {
+            //System.out.println("Start with " + getQuantity() + " " + getName());
+            this.quantity -= num;
+            // System.out.println("Subtract " + num + " from " + name + ": " + getQuantity());
+        } else {
+            System.out.println("Number exceeds available quantity");
+        }
     }
 
     public double getFaceValue() {
