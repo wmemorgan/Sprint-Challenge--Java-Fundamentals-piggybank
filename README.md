@@ -33,9 +33,9 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Create the proper directory structure for developing a Java Application
 - [ ] Push commits: `git push origin <firstName-lastName>`
@@ -44,7 +44,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 2: Project Requirements
 
-- [ ] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
+- [x] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
   - Each element in the collection contains
     - The number of coins in this group
     - The face value of the coins in the group
@@ -59,15 +59,15 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 The main program will look something like this pseudocode (remember pseudocode is not meant to be syntactically correct but explain the algorithm):
 
-- [ ] Create collection
-- [ ] piggyBank.add(new Quarter())
-- [ ] piggyBank.add(new Dime())
-- [ ] piggyBank.add(new Dollar(5))
-- [ ] piggyBank.add(new Nickel(3))
-- [ ] piggyBank.add(new Dime(7))
-- [ ] piggyBank.add(new Dollar())
-- [ ] piggyBank.add(new Penny(10))
-- [ ] Print the contents of the Piggy Bank
+- [x] Create collection
+- [x] piggyBank.add(new Quarter())
+- [x] piggyBank.add(new Dime())
+- [x] piggyBank.add(new Dollar(5))
+- [x] piggyBank.add(new Nickel(3))
+- [x] piggyBank.add(new Dime(7))
+- [x] piggyBank.add(new Dollar())
+- [x] piggyBank.add(new Penny(10))
+- [x] Print the contents of the Piggy Bank
   - on the console should appear  
     `1 Quarter`  
     `1 Dime`  
@@ -76,7 +76,7 @@ The main program will look something like this pseudocode (remember pseudocode i
     `7 Dimes`  
     `$1`  
     `10 Pennies`  
-- [ ] Print the value of the Piggy Bank
+- [x] Print the value of the Piggy Bank
   - on the console should appear  
     `The piggy bank holds $7.30`  
 
@@ -84,11 +84,11 @@ Note: that when you have more than 1 coin, the plural of the coin's name is prin
 
 ### Required best practices
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
