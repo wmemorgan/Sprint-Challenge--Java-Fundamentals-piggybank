@@ -24,17 +24,7 @@ public class PiggyBank {
         piggyBank.add(new Dollar());
         piggyBank.add(new Penny(10));
 
-        // Print contents
-        System.out.println("Piggy Bank deposits:");
-        for (
-
-        Money m : piggyBank) {
-            if (m.getName().contains("Dollar")) {
-                System.out.println(decimalFormat.format(m.getTotalValue()));
-            } else {
-                System.out.println(m.quantity + " " + m.getName());
-            }
-        }
+        System.out.println("\npiggyBank: " + piggyBank.get(3).getFaceValue() + "\n");
 
         // Aggregate deposits
         for (Money m : piggyBank) {
@@ -45,6 +35,20 @@ public class PiggyBank {
                 vault.put(denom, updatedTotalQuantity);
             } else {
                 vault.put(denom, m.getQuantity());
+            }
+        }
+    }
+
+    public void getAllDeposits() {
+        // Print contents
+        System.out.println("Piggy Bank deposits:");
+        for (
+
+        Money m : piggyBank) {
+            if (m.getName().contains("Dollar")) {
+                System.out.println(decimalFormat.format(m.getTotalValue()));
+            } else {
+                System.out.println(m.quantity + " " + m.getName());
             }
         }
     }

@@ -9,6 +9,8 @@ public class Main {
         System.out.println("\n*** Welcome to Cafe Morgan Piggy Bank & Trust ***\n");
         // Instantiate bank
         ourPiggyBank = new PiggyBank();
+        // Display piggy bank contents:
+        ourPiggyBank.getAllDeposits();
         // Get aggregate deposits
         ourPiggyBank.getTotalDeposits();
         // Withdraw money
