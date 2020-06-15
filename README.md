@@ -25,9 +25,36 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Describe why Java is called an object oriented, strongly typed language.
-2. Give examples of Java Collections explaining the use and differences between them.
-3. What is recursion and how does it differ from regular looping?
-4. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+   
+   _Java is considered an object oriented programming language because it uses classes and objects to enable a programmer to adhere to the 4 pillars of OOP:_
+
+   1. _Abstraction: Creating a class_
+   2. _Encapsulation: Creating pieces of code that do one thing well and then calling is over and over again._
+   3. _Polymorphism: We can create a sum function that takes various parameters_
+      ```
+      sum(1, 2) = 3
+      sum(‘a’, ‘b’, ‘c’) = abc
+      sum(5) = 5
+      ```
+      _We can create a variety of ways to create an object depending on how much information we can give to the method. The method then implements the objects based on available information_
+
+   1. _Inheritance: Abstract classes and interfaces
+   Child classes can then inherit their parents characteristics and expand upon those._
+
+1. Give examples of Java Collections explaining the use and differences between them.
+   1. _ArrayList: a data structure that acts like a dynamic array allowing adding and removing of elements._ 
+   2. _HashMap: a data structure that stores key/value pairs. Unlike an ArrayList they are not stored or displayed in order however insertion and deletion are faster [O(1)] in comparison because they don't require re-indexing to perform these operations._
+2. What is recursion and how does it differ from regular looping?
+   
+    - _A function which invokes itself inside its function definition_
+  
+    - _These technique is used as an alternative to an iterative approach to make the program shorter and easier to read. However this method uses more memory in comparison._
+
+3. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+
+     - _Abstract Classes: A special class that contains common characteristics of subclasses but cannot be instantiated directly. Used to define object fields and methods that would be used in multiple child classes. Regular classes can only inherit ONE abstract class._
+  
+     - _Interfaces: A collection of abstract (no details specified) methods which can be implemented in a classes. Used to enforce the declaration of methods in specified subclasses. Regular classes can implement MULTIPLE interfaces._
 
 ## Instructions
 
