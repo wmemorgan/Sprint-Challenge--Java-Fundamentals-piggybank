@@ -5,15 +5,12 @@ public class Quarter extends Money {
     public Quarter(int quantity) {
         super(quantity);
         name = "Quarter";
+        faceValue = 0.25;
     }
 
     public Quarter() {
         name = "Quarter";
-    }
-
-    @Override
-    public double getFaceValue() {
-        return quantity * 0.25;
+        faceValue = 0.25;
     }
 
 }

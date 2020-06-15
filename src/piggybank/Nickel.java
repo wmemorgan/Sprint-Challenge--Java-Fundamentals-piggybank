@@ -5,15 +5,12 @@ public class Nickel extends Money {
     public Nickel(int quantity) {
         super(quantity);
         name = "Nickel";
+        faceValue = 0.05;
     }
 
     public Nickel() {
         name = "Nickel";
-    }
-
-    @Override
-    public double getFaceValue() {
-        return quantity * 0.05;
+        faceValue = 0.05;
     }
 
 }

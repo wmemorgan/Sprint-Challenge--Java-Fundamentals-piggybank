@@ -8,22 +8,20 @@ abstract class Money {
     DecimalFormat decimalFormat = new DecimalFormat(pattern);
 
     protected static int maxId = 0;
-
     protected int id;
     protected String name;
     protected int quantity;
+    protected double faceValue;
 
     public Money(int quantity) {
         maxId++;
         id = maxId;
-        name = "placeholder";
         this.quantity = quantity;
     }
 
     public Money() {
         maxId++;
         id = maxId;
-        name = "placeholder";
         quantity = 1;
     }
 
@@ -50,12 +48,18 @@ abstract class Money {
     public void addQuantity(int quantity) {
         this.quantity += quantity;
     }
-    
-    abstract double getFaceValue();
+
+    public double getFaceValue() {
+        return faceValue;
+    }
+
+    public double getTotalValue() {
+        return quantity * faceValue;
+    }
 
     @Override
     public String toString() {
-        return getName() + " " + "quantity: " + quantity + " face value: " + decimalFormat.format(getFaceValue());
+        return getName() + " " + "quantity: " + quantity + " face value: " + decimalFormat.format(getTotalValue());
     }
 
 }

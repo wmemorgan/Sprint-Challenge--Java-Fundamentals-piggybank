@@ -5,15 +5,12 @@ public class Dime extends Money {
     public Dime(int quantity) {
         super(quantity);
         name = "Dime";
+        faceValue = 0.10;
     }
 
     public Dime() {
         name = "Dime";
-    }
-
-    @Override
-    public double getFaceValue() {
-        return quantity * 0.10;
+        faceValue = 0.10;
     }
 
 }

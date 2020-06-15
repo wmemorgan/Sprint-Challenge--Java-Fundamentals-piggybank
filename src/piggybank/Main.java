@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Piggy Bank deposits:");
         for (Money m : piggyBank) {
             if (m.getName().contains("Dollar")) {
-                System.out.println(decimalFormat.format(m.getFaceValue()));
+                System.out.println(decimalFormat.format(m.getTotalValue()));
             } else {
                 System.out.println(m.quantity + " " + m.getName());
             }
@@ -36,7 +36,7 @@ public class Main {
         // Calculate total deposits
         double sum = 0.0;
         for (Money m : piggyBank) {
-            sum += m.getFaceValue();
+            sum += m.getTotalValue();
         }
 
         decimalFormat.applyPattern("$0.00");

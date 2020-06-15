@@ -1,19 +1,16 @@
 package piggybank;
 
 public class Dollar extends Money {
-    
+
     public Dollar(int quantity) {
         super(quantity);
         name = "Dollar";
-    }
-    
-    public Dollar() {
-        name = "Dollar";
+        faceValue = 1.0;
     }
 
-    @Override
-    public double getFaceValue() {
-        return quantity * 1.0;
+    public Dollar() {
+        name = "Dollar";
+        faceValue = 1.0;
     }
-    
+
 }
