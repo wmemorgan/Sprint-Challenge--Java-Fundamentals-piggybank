@@ -1,45 +1,17 @@
 package piggybank;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
-    public static void main(String[] args) {
-        String pattern = "$0";
-        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+    public static PiggyBank ourPiggyBank;
 
-        List<Money> piggyBank = new ArrayList<>();
+    public static void main(String[] args) {
 
         System.out.println("\n*** Welcome to Cafe Morgan Piggy Bank & Trust ***\n");
-
-        // Deposit money to bank
-        piggyBank.add(new Quarter());
-        piggyBank.add(new Dime());
-        piggyBank.add(new Dollar(5));
-        piggyBank.add(new Nickel(3));
-        piggyBank.add(new Dime(7));
-        piggyBank.add(new Dollar());
-        piggyBank.add(new Penny(10));
-
-        // Print contents
-        System.out.println("Piggy Bank deposits:");
-        for (Money m : piggyBank) {
-            if (m.getName().contains("Dollar")) {
-                System.out.println(decimalFormat.format(m.getTotalValue()));
-            } else {
-                System.out.println(m.quantity + " " + m.getName());
-            }
-        }
-
-        // Calculate total deposits
-        double sum = 0.0;
-        for (Money m : piggyBank) {
-            sum += m.getTotalValue();
-        }
-
-        decimalFormat.applyPattern("$0.00");
-        System.out.println("\nThe piggy bank holds " + decimalFormat.format(sum));
+        // Instantiate bank
+        ourPiggyBank = new PiggyBank();
+        // Get aggregate deposits
+        ourPiggyBank.getTotalDeposits();
+        // Withdraw money
+        ourPiggyBank.withdraw(1.50);
     }
 }
