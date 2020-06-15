@@ -24,18 +24,45 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Describe why Java is called an object oriented, strongly typed language.
-2. Give examples of Java Collections explaining the use and differences between them.
-3. What is recursion and how does it differ from regular looping?
-4. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+1. Describe why Java is called an object oriented, 1. Describe why Java is called an object oriented, strongly typed language.
+   
+   _Java is considered an object oriented programming language because it uses classes and objects to enable a programmer to adhere to the 4 pillars of OOP:_
+
+   1. _Abstraction: Creating a class_
+   2. _Encapsulation: Creating pieces of code that do one thing well and then calling is over and over again._
+   3. _Polymorphism: We can create a sum function that takes various parameters_
+      ```
+      sum(1, 2) = 3
+      sum(‘a’, ‘b’, ‘c’) = abc
+      sum(5) = 5
+      ```
+      _We can create a variety of ways to create an object depending on how much information we can give to the method. The method then implements the objects based on available information_
+
+   1. _Inheritance: Abstract classes and interfaces
+   Child classes can then inherit their parents characteristics and expand upon those._
+
+1. Give examples of Java Collections explaining the use and differences between them.
+   1. _ArrayList: a data structure that acts like a dynamic array allowing adding and removing of elements._ 
+   2. _HashMap: a data structure that stores key/value pairs. Unlike an ArrayList they are not stored or displayed in order however insertion and deletion are faster [O(1)] in comparison because they don't require re-indexing to perform these operations._
+2. What is recursion and how does it differ from regular looping?
+   
+    - _A function which invokes itself inside its function definition_
+  
+    - _These technique is used as an alternative to an iterative approach to make the program shorter and easier to read. However this method uses more memory in comparison._
+
+3. Explain the differences between Abstract Classes and Interfaces including scenarios of when to use them.
+
+     - _Abstract Classes: A special class that contains common characteristics of subclasses but cannot be instantiated directly. Used to define object fields and methods that would be used in multiple child classes. Regular classes can only inherit ONE abstract class._
+  
+     - _Interfaces: A collection of abstract (no details specified) methods which can be implemented in a classes. Used to enforce the declaration of methods in specified subclasses. Regular classes can implement MULTIPLE interfaces._
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Create the proper directory structure for developing a Java Application
 - [ ] Push commits: `git push origin <firstName-lastName>`
@@ -44,7 +71,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 2: Project Requirements
 
-- [ ] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
+- [x] Create a collection (Array, ArrayList, or HashMap) to represent the piggy bank. The elements in the collection are pockets of money.
   - Each element in the collection contains
     - The number of coins in this group
     - The face value of the coins in the group
@@ -59,15 +86,15 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 The main program will look something like this pseudocode (remember pseudocode is not meant to be syntactically correct but explain the algorithm):
 
-- [ ] Create collection
-- [ ] piggyBank.add(new Quarter())
-- [ ] piggyBank.add(new Dime())
-- [ ] piggyBank.add(new Dollar(5))
-- [ ] piggyBank.add(new Nickel(3))
-- [ ] piggyBank.add(new Dime(7))
-- [ ] piggyBank.add(new Dollar())
-- [ ] piggyBank.add(new Penny(10))
-- [ ] Print the contents of the Piggy Bank
+- [x] Create collection
+- [x] piggyBank.add(new Quarter())
+- [x] piggyBank.add(new Dime())
+- [x] piggyBank.add(new Dollar(5))
+- [x] piggyBank.add(new Nickel(3))
+- [x] piggyBank.add(new Dime(7))
+- [x] piggyBank.add(new Dollar())
+- [x] piggyBank.add(new Penny(10))
+- [x] Print the contents of the Piggy Bank
   - on the console should appear  
     `1 Quarter`  
     `1 Dime`  
@@ -76,7 +103,7 @@ The main program will look something like this pseudocode (remember pseudocode i
     `7 Dimes`  
     `$1`  
     `10 Pennies`  
-- [ ] Print the value of the Piggy Bank
+- [x] Print the value of the Piggy Bank
   - on the console should appear  
     `The piggy bank holds $7.30`  
 
@@ -84,11 +111,11 @@ Note: that when you have more than 1 coin, the plural of the coin's name is prin
 
 ### Required best practices
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
@@ -100,24 +127,24 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- [ ] Add the ability to remove coins from the piggy bank
+- [x] Add the ability to remove coins from the piggy bank
   - Prevent taking more coins than present in the piggy bank
   - Coins do not have to be removed in the same quantity that were added. For example based on the main program above, removing 3 dimes would be allowed. The Piggy Bank should adjust appropriately.
   - Just the amount to be removed should be given. The program will figure out which coins to remove.
 
 Pseudocode for this should look like
 
-- [ ] subtract(1.50)
-- [ ] print contents of the Piggy Bank
+- [x] subtract(1.50)
+- [x] print contents of the Piggy Bank
   - on the console on possible out come is  
     `$4`  
     `7 Dimes`  
     `$1`  
     `10 Pennies`  
-- [ ] Print the value of the Piggy Bank
+- [x] Print the value of the Piggy Bank
   - on the console should appear  
 
-    `The piggy bank holds $4.30`
+    `The piggy bank holds $5.80`
 
 ## Submission format
 
