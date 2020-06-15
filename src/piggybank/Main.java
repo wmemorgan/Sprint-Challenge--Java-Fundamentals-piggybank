@@ -22,5 +22,15 @@ public class Main {
         piggyBank.add(new Dime(7));
         piggyBank.add(new Dollar());
         piggyBank.add(new Penny(10));
+
+        // Print contents
+        System.out.println("Piggy Bank deposits:");
+        for (Money m : piggyBank) {
+            if (m.getName().contains("Dollar")) {
+                System.out.println(decimalFormat.format(m.getFaceValue()));
+            } else {
+                System.out.println(m.quantity + " " + m.getName());
+            }
+        }
     }
 }
