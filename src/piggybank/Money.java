@@ -32,7 +32,7 @@ abstract class Money {
     }
 
     public String getName() {
-        return name;
+        return quantity > 1 ? name + "s" : name;
     }
 
     public int getQuantity() {
@@ -55,7 +55,7 @@ abstract class Money {
 
     @Override
     public String toString() {
-        return name + " " + "quantity: " + quantity + " face value: " + decimalFormat.format(getFaceValue());
+        return getName() + " " + "quantity: " + quantity + " face value: " + decimalFormat.format(getFaceValue());
     }
 
 }
