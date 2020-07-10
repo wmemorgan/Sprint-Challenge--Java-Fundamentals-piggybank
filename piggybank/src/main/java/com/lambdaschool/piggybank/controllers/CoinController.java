@@ -19,6 +19,9 @@ public class CoinController {
 
     @GetMapping(value = "/total", produces = "application/json")
     public ResponseEntity<?> getBankTotal() {
+
+        System.out.println("\n****Welcome to Cafe Morgan Piggy Bank & Trust***\n");
+
         List<Coin> myList = new ArrayList<>();
         coinRepository.findAll().iterator().forEachRemaining(myList::add);
         double sum = 0;
